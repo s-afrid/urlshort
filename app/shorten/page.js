@@ -11,20 +11,20 @@ const Shorten = () => {
 
     }
   return (
-    <div className='mx-auto max-w-lg'>
-      <h1>Generate your short URLs</h1>
-      <div>
+    <div className='mx-auto max-w-lg bg-purple-100 my-16 p-8 rounded-lg flex flex-col gap-4'>
+      <h1 className='font-bold text-2xl'>Generate your short URLs</h1>
+      <div className='flex flex-col gap-4'>
         <input 
             type="text"
-            className='p-4 focus:outline-purple-600' 
+            className='px-4 py-2 focus:outline-purple-600 rounded-md bg-white' 
             placeholder='Enter your URL' 
             onChange={handleChange} />
         <input 
             type="text"
-            className='p-4 focus:outline-purple-600' 
+            className='px-4 py-2 focus:outline-purple-600 rounded-md bg-white' 
             placeholder='Enter your preferred short URL' 
             onChange={handleChange} />
-        <button>Generate</button>
+        <button className="bg-purple-500 shadow-lg px-3 py-1 font-bold rounded-lg text-white my-2">Generate</button>
       </div>
     </div>
   )
